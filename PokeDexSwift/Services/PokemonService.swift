@@ -8,10 +8,6 @@
 import Foundation
 import Combine
 
-protocol PokemonServiceProtocol {
-    func fetchPokemon(named name: String) -> AnyPublisher<Pokemon, Error>
-}
-
 class PokemonService: PokemonServiceProtocol {
     // Base URL for the API
     private let baseUrl = "https://pokeapi.co/api/v2/pokemon/"

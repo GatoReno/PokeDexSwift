@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		645AED742D77F8D400F3EB10 /* ChangeColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645AED732D77F8D400F3EB10 /* ChangeColorButtonStyle.swift */; };
 		645AED772D77FE7600F3EB10 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645AED762D77FE7600F3EB10 /* SecondView.swift */; };
+		6499A9C62D780B980012C23A /* PokemonServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9C52D780B980012C23A /* PokemonServiceProtocol.swift */; };
+		6499A9C92D780D010012C23A /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9C82D780D010012C23A /* ToastView.swift */; };
+		6499A9CB2D780D560012C23A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499A9CA2D780D560012C23A /* TimerViewModel.swift */; };
 		64D9E7022D77728400C34C6E /* PokeDexSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7012D77728400C34C6E /* PokeDexSwiftApp.swift */; };
 		64D9E7042D77728400C34C6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7032D77728400C34C6E /* ContentView.swift */; };
 		64D9E7062D77728500C34C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D9E7052D77728500C34C6E /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 /* Begin PBXFileReference section */
 		645AED732D77F8D400F3EB10 /* ChangeColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorButtonStyle.swift; sourceTree = "<group>"; };
 		645AED762D77FE7600F3EB10 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		6499A9C52D780B980012C23A /* PokemonServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonServiceProtocol.swift; sourceTree = "<group>"; };
+		6499A9C82D780D010012C23A /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		6499A9CA2D780D560012C23A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		64D9E6FE2D77728400C34C6E /* PokeDexSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDexSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D9E7012D77728400C34C6E /* PokeDexSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexSwiftApp.swift; sourceTree = "<group>"; };
 		64D9E7032D77728400C34C6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		645AED722D77F8C600F3EB10 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				6499A9C72D780CD80012C23A /* Components */,
 				645AED732D77F8D400F3EB10 /* ChangeColorButtonStyle.swift */,
 			);
 			path = Structs;
@@ -96,6 +103,23 @@
 				645AED762D77FE7600F3EB10 /* SecondView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6499A9C42D780B6A0012C23A /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				6499A9C52D780B980012C23A /* PokemonServiceProtocol.swift */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		6499A9C72D780CD80012C23A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6499A9C82D780D010012C23A /* ToastView.swift */,
+				6499A9CA2D780D560012C23A /* TimerViewModel.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		64D9E6F52D77728400C34C6E = {
@@ -121,6 +145,7 @@
 		64D9E7002D77728400C34C6E /* PokeDexSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6499A9C42D780B6A0012C23A /* Abstractions */,
 				645AED752D77FE6600F3EB10 /* Views */,
 				645AED722D77F8C600F3EB10 /* Structs */,
 				64D9E7322D77879B00C34C6E /* ViewModels */,
@@ -314,12 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6499A9CB2D780D560012C23A /* TimerViewModel.swift in Sources */,
 				645AED772D77FE7600F3EB10 /* SecondView.swift in Sources */,
 				64D9E7342D77881E00C34C6E /* NavigationService.swift in Sources */,
 				645AED742D77F8D400F3EB10 /* ChangeColorButtonStyle.swift in Sources */,
+				6499A9C62D780B980012C23A /* PokemonServiceProtocol.swift in Sources */,
 				64D9E72E2D777C6A00C34C6E /* PokemonStruct.swift in Sources */,
 				64D9E7312D77818B00C34C6E /* PokemonService.swift in Sources */,
 				64D9E7042D77728400C34C6E /* ContentView.swift in Sources */,
+				6499A9C92D780D010012C23A /* ToastView.swift in Sources */,
 				64D9E7022D77728400C34C6E /* PokeDexSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

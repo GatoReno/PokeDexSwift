@@ -6,3 +6,7 @@
 //
 
 import Foundation
+import Combine
+protocol PokemonServiceProtocol {
+    func fetchPokemon(named name: String) -> AnyPublisher<Pokemon, Error>
+}
