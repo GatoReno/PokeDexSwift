@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		645AED742D77F8D400F3EB10 /* ChangeColorButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645AED732D77F8D400F3EB10 /* ChangeColorButtonStyle.swift */; };
+		645AED772D77FE7600F3EB10 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645AED762D77FE7600F3EB10 /* SecondView.swift */; };
 		64D9E7022D77728400C34C6E /* PokeDexSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7012D77728400C34C6E /* PokeDexSwiftApp.swift */; };
 		64D9E7042D77728400C34C6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7032D77728400C34C6E /* ContentView.swift */; };
 		64D9E7062D77728500C34C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D9E7052D77728500C34C6E /* Assets.xcassets */; };
@@ -14,6 +16,9 @@
 		64D9E7142D77728500C34C6E /* PokeDexSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7132D77728500C34C6E /* PokeDexSwiftTests.swift */; };
 		64D9E71E2D77728500C34C6E /* PokeDexSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E71D2D77728500C34C6E /* PokeDexSwiftUITests.swift */; };
 		64D9E7202D77728500C34C6E /* PokeDexSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E71F2D77728500C34C6E /* PokeDexSwiftUITestsLaunchTests.swift */; };
+		64D9E72E2D777C6A00C34C6E /* PokemonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E72D2D777C6A00C34C6E /* PokemonStruct.swift */; };
+		64D9E7312D77818B00C34C6E /* PokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7302D77818B00C34C6E /* PokemonService.swift */; };
+		64D9E7342D77881E00C34C6E /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D9E7332D77881E00C34C6E /* NavigationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		645AED732D77F8D400F3EB10 /* ChangeColorButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorButtonStyle.swift; sourceTree = "<group>"; };
+		645AED762D77FE7600F3EB10 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		64D9E6FE2D77728400C34C6E /* PokeDexSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDexSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D9E7012D77728400C34C6E /* PokeDexSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexSwiftApp.swift; sourceTree = "<group>"; };
 		64D9E7032D77728400C34C6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +52,9 @@
 		64D9E7192D77728500C34C6E /* PokeDexSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDexSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D9E71D2D77728500C34C6E /* PokeDexSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexSwiftUITests.swift; sourceTree = "<group>"; };
 		64D9E71F2D77728500C34C6E /* PokeDexSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64D9E72D2D777C6A00C34C6E /* PokemonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonStruct.swift; sourceTree = "<group>"; };
+		64D9E7302D77818B00C34C6E /* PokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonService.swift; sourceTree = "<group>"; };
+		64D9E7332D77881E00C34C6E /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		645AED722D77F8C600F3EB10 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				645AED732D77F8D400F3EB10 /* ChangeColorButtonStyle.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		645AED752D77FE6600F3EB10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				645AED762D77FE7600F3EB10 /* SecondView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		64D9E6F52D77728400C34C6E = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +121,11 @@
 		64D9E7002D77728400C34C6E /* PokeDexSwift */ = {
 			isa = PBXGroup;
 			children = (
+				645AED752D77FE6600F3EB10 /* Views */,
+				645AED722D77F8C600F3EB10 /* Structs */,
+				64D9E7322D77879B00C34C6E /* ViewModels */,
+				64D9E72F2D777C8100C34C6E /* Services */,
+				64D9E72C2D777C5000C34C6E /* Models */,
 				64D9E7012D77728400C34C6E /* PokeDexSwiftApp.swift */,
 				64D9E7032D77728400C34C6E /* ContentView.swift */,
 				64D9E7052D77728500C34C6E /* Assets.xcassets */,
@@ -127,6 +158,30 @@
 				64D9E71F2D77728500C34C6E /* PokeDexSwiftUITestsLaunchTests.swift */,
 			);
 			path = PokeDexSwiftUITests;
+			sourceTree = "<group>";
+		};
+		64D9E72C2D777C5000C34C6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64D9E72D2D777C6A00C34C6E /* PokemonStruct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64D9E72F2D777C8100C34C6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				64D9E7302D77818B00C34C6E /* PokemonService.swift */,
+				64D9E7332D77881E00C34C6E /* NavigationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64D9E7322D77879B00C34C6E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645AED772D77FE7600F3EB10 /* SecondView.swift in Sources */,
+				64D9E7342D77881E00C34C6E /* NavigationService.swift in Sources */,
+				645AED742D77F8D400F3EB10 /* ChangeColorButtonStyle.swift in Sources */,
+				64D9E72E2D777C6A00C34C6E /* PokemonStruct.swift in Sources */,
+				64D9E7312D77818B00C34C6E /* PokemonService.swift in Sources */,
 				64D9E7042D77728400C34C6E /* ContentView.swift in Sources */,
 				64D9E7022D77728400C34C6E /* PokeDexSwiftApp.swift in Sources */,
 			);
