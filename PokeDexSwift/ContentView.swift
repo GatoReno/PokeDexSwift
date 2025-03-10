@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @StateObject private var viewModel = TimerViewModel()
     @State private var buttonColor: Color = .blue
+    private var vibrationService: VibrationProtocol = VibrationService()
     
     var body: some View {
         NavigationView(content: {
@@ -32,17 +33,34 @@ struct ContentView: View {
                         }
                         .buttonStyle(ChangeColorButtonStyle())
                         .padding()
+                    HStack
+                    {
+                        Button("Start Timer") {
+                            viewModel.startTimer()
+                            
+                        }.padding()
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                        Button("Stop Timer"){
+                            viewModel.stopTimer()
+                        } .padding()
+                            .background(Color.red)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
                     
-                    ToastView(message: "This is your toast notification!", showToast: viewModel.showToast)
+                    ToastView(message: "This is your toast notification!", showToast: viewModel.showToast,vibrationService: vibrationService)
                 }
                 .frame(maxHeight: .infinity, alignment: .top)
                 .padding()
-                
-                
             }
-           
-
-        })
+            
+            
+        }).onAppear()
+        {
+            viewModel.startTimer()
+        }
         
         
     }

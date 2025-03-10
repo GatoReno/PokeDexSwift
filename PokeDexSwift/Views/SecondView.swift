@@ -24,7 +24,7 @@ struct SecondView: View {
                     
                 }.padding(.trailing, 20)
             }
-            Text("Second View!").padding()
+            PokemonListView(viewModel: PokemonViewModel(pokemonService: PokemonService()))
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.top)

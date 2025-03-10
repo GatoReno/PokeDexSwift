@@ -11,6 +11,8 @@ import SwiftUI
 struct ToastView: View {
     let message: String
     let showToast: Bool
+    var vibrationService: VibrationProtocol
+
     
     var body: some View {
         VStack {
@@ -23,6 +25,10 @@ struct ToastView: View {
                     .opacity(showToast ? 1 : 0) // Control the opacity for fade-in/fade-out
                     .animation(.easeOut(duration: 1.0), value: showToast) // Slower opacity transition (1.0 seconds)
                     .transition(.move(edge: .bottom)) 
+                    .onAppear()
+                    {
+                        vibrationService.triggerVibration()
+                    }
             }
         }
         .padding(.bottom, 50)
